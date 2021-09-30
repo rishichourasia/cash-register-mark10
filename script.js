@@ -21,7 +21,7 @@ button.addEventListener("click", function calculateAmount() {
 		if (paidAmt >= billAmt) {
 			const amToPay = paidAmt - billAmt;
 			calculateAmt(amToPay);
-			returnAmount.innerText = `Return Cash Amount for bill ₹${billAmt} = ₹${amToPay}`;
+			returnAmount.innerText = `Return Cash Amount for bill ₹${billAmt} - ₹${paidAmt}  = ₹${amToPay}`;
 		} else {
 			addClasses();
 			errorMessage("Will you pay more or should i call 911?");
