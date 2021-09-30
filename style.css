@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+.container-flex {
+	display: flex;
+	flex-direction: column;
+}
+body {
+	font-family: "Montserrat", sans-serif;
+}
+
+/* table css */
+#customers,
+.inner-table {
+	font-family: Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	width: 50%;
+}
+
+#customers td,
+#customers th,
+.inner-table td,
+.inner-table th {
+	border: 1px solid #ddd;
+	padding: 8px;
+	padding-right: 1px;
+	width: 50%;
+}
+
+#customers tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+	background-color: #ddd;
+}
+
+#customers th,
+.inner-table th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: #04aa6d;
+	color: white;
+}
+.note {
+	padding-top: 0px !important;
+}
+
+button {
+	background-color: #04aa6d !important;
+	margin-top: 20px;
+	color: #f2f2f2;
+	font-weight: bold;
+	font-size: larger;
+}
+
+.inner-table tr:nth-child(even) {
+	background-color: #dfdcdc;
+}
+
+.inner-table tr:hover {
+	background-color: rgb(194, 189, 189);
+}
+
+td {
+	max-width: 40px !important;
+}
+
+.container {
+	margin-top: 40px;
+	text-align: center;
+}
+
+.centre {
+	text-align: center !important;
+	padding-left: 10px !important;
+	left: 50% !important;
+}
+
+table {
+	margin-left: 310px !important;
+	margin-top: 5px !important;
+}
+
+h4 {
+	padding-top: 30px;
+}
+.bill-label {
+	font-size: 1.3rem;
+	font-weight: bold;
+	padding-top: 8px;
+	padding-right: 10px;
+}
+.cash-label {
+	font-size: 1.3rem;
+	font-weight: bold;
+	padding-top: 8px;
+	padding-right: 10px;
+	margin-left: 20px;
+}
+
+h1 {
+	margin-bottom: 40px !important;
+}
+
+.negative {
+	width: 60% !important;
+	align-items: center !important;
+	align-self: center !important;
+	margin-left: 230px !important;
+}
+.inner-table {
+	padding-top: 0 !important;
+}
+.input-bill {
+	display: flex;
+	justify-content: center;
+	padding-left: 27px;
+	margin-bottom: 20px;
+}
+
+.paid {
+	display: flex;
+	justify-content: center;
+}
+
+.negative {
+	max-width: 30%;
+	background-color: #dd2f2f;
+	color: #f2f2f2;
+	font-size: large;
+	font-weight: bold;
+	align-items: center;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	margin: auto;
+	border-radius: 8px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 5px;
+}
+.inside {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 13px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	margin-left: 250px;
+}

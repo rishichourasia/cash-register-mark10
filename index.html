@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	
+		
+        <link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="ui container">
+			<h1 class="ui header">Cash Register</h1>
+			<div class="ui input-bill">
+				<label class="bill-label">Bill Amount:</label>
+				<input id="bill-amount" type="text" placeholder="Enter Amount" />
+			</div>
+			<div class="ui paid">
+				<label class="cash-label">Paid Amount:</label>
+				<input id="paid-amount" type="number" placeholder="Enter Amount" />
+			</div>
+            <button id="btn" class="positive ui button green">Calculate</button>
+<div class="inside">
+            <div class="err"> 
+               </div>
+			</div>
+
+			<div class="container-flex">
+				<h4 class="h4" ></h4>
+				<div class="centre">
+				<table id="customers">
+                    <tr class="note">
+                      <th >Note</th>
+                      <th >No.of Notes</th>
+                    </tr>
+                    <table class="inner-table">
+                </table>
+            </tr>
+            </table>
+		</div>
+			</div>
+		</div>
+        <script src="script.js"></script>
+	</body>
+</html>
