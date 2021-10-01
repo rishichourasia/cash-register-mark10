@@ -13,7 +13,7 @@ const table = document.querySelector(".centre");
 button.addEventListener("click", function calculateAmount() {
 	removeClasses();
 	// innerTable.innerHTML = "";
-	
+
 	const billAmt = parseInt(billAmount.value);
 	const paidAmt = parseInt(paidAmount.value);
 
@@ -26,14 +26,10 @@ button.addEventListener("click", function calculateAmount() {
 		} else {
 			addClasses();
 			errorMessage("Will you pay more or should i call 911?");
-			table.style.display = "none";
-			returnAmount.innerText = "";
 		}
 	} else {
 		addClasses();
 		errorMessage("Enter Valid Bill Amount");
-		table.style.display = "none";
-		returnAmount.innerText = "";
 	}
 	billAmount.value = "";
 	paidAmount.value = "";
@@ -52,6 +48,8 @@ function removeClasses() {
 function addClasses() {
 	// errBody.classList.add("message");
 	errMsg.classList.add("negative");
+	table.style.display = "none";
+	returnAmount.innerText = "";
 }
 
 function calculateAmt(amt) {
