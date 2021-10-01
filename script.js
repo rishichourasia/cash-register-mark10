@@ -13,7 +13,7 @@ const table = document.querySelector(".centre");
 button.addEventListener("click", function calculateAmount() {
 	removeClasses();
 	// innerTable.innerHTML = "";
-
+	
 	const billAmt = parseInt(billAmount.value);
 	const paidAmt = parseInt(paidAmount.value);
 
