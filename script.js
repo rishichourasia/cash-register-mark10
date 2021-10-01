@@ -7,12 +7,11 @@ const errMsg = document.querySelector(".err");
 // const errBody = document.querySelector(".negative");
 const innerTable = document.querySelector(".inner-table");
 const returnAmount = document.querySelector(".h4");
-
-console.log(innerTable);
+const noteNumber = document.querySelectorAll(".noteNo");
 
 button.addEventListener("click", function calculateAmount() {
 	removeClasses();
-	innerTable.innerHTML = "";
+	// innerTable.innerHTML = "";
 
 	const billAmt = parseInt(billAmount.value);
 	const paidAmt = parseInt(paidAmount.value);
@@ -21,7 +20,7 @@ button.addEventListener("click", function calculateAmount() {
 		if (paidAmt >= billAmt) {
 			const amToPay = paidAmt - billAmt;
 			calculateAmt(amToPay);
-			returnAmount.innerText = `Return Cash Amount for bill ₹${billAmt} - ₹${paidAmt}  = ₹${amToPay}`;
+			returnAmount.innerText = `Return Cash Amount for bill ₹${paidAmt} - ₹${billAmt}  = ₹${amToPay}`;
 		} else {
 			addClasses();
 			errorMessage("Will you pay more or should i call 911?");
@@ -55,11 +54,11 @@ function calculateAmt(amt) {
 		amt = amt % notesAvailable[i];
 
 		if (noOfNotes != 0) {
-			// noteNumber[i].textContent = noOfNotes;
-			innerTable.innerHTML += `<tr>
-            <td>₹${notesAvailable[i]}</td>
-            <td class="no-of-notes">${noOfNotes}</td>
-          </tr> `;
+			noteNumber[i].textContent = noOfNotes;
+			// 	innerTable.innerHTML += `<tr>
+			//     <td>₹${notesAvailable[i]}</td>
+			//     <td class="no-of-notes">${noOfNotes}</td>
+			//   </tr> `;
 		}
 	}
 }

@@ -11,6 +11,7 @@ input::-webkit-inner-spin-button {
 }
 body {
 	font-family: "Montserrat", sans-serif;
+	background-color: #ccf8d3;
 }
 
 /* table css */
@@ -32,7 +33,10 @@ body {
 }
 
 #customers tr:nth-child(even) {
-	background-color: #f2f2f2;
+	background-color: #ffffff;
+}
+#customers tr:nth-child(odd) {
+	background-color: #cdf5c9;
 }
 
 #customers tr:hover {
@@ -78,8 +82,8 @@ td {
 
 .centre {
 	text-align: center !important;
-	padding-left: 10px !important;
-	left: 50% !important;
+	padding-left: 150px !important;
+	left: 80% !important;
 }
 
 table {
