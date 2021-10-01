@@ -8,6 +8,7 @@ const errMsg = document.querySelector(".err");
 const innerTable = document.querySelector(".inner-table");
 const returnAmount = document.querySelector(".h4");
 const noteNumber = document.querySelectorAll(".noteNo");
+const table = document.querySelector(".centre");
 
 button.addEventListener("click", function calculateAmount() {
 	removeClasses();
@@ -18,16 +19,21 @@ button.addEventListener("click", function calculateAmount() {
 
 	if (billAmt > 0) {
 		if (paidAmt >= billAmt) {
+			table.style.display = "flex";
 			const amToPay = paidAmt - billAmt;
 			calculateAmt(amToPay);
 			returnAmount.innerText = `Return Cash Amount for bill ₹${paidAmt} - ₹${billAmt}  = ₹${amToPay}`;
 		} else {
 			addClasses();
 			errorMessage("Will you pay more or should i call 911?");
+			table.style.display = "none";
+			returnAmount.innerText = "";
 		}
 	} else {
 		addClasses();
 		errorMessage("Enter Valid Bill Amount");
+		table.style.display = "none";
+		returnAmount.innerText = "";
 	}
 	billAmount.value = "";
 	paidAmount.value = "";
