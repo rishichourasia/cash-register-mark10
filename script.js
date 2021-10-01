@@ -12,7 +12,7 @@ const noteNumber = document.querySelectorAll(".noteNo");
 button.addEventListener("click", function calculateAmount() {
 	removeClasses();
 	// innerTable.innerHTML = "";
-
+	noteNumber[i].textContent= "";
 	const billAmt = parseInt(billAmount.value);
 	const paidAmt = parseInt(paidAmount.value);
 
