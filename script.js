@@ -13,6 +13,9 @@ const table = document.querySelector(".centre");
 button.addEventListener("click", function calculateAmount() {
 	removeClasses();
 	// innerTable.innerHTML = "";
+	for (i = 0; i < notesAvailable.length; i++) {
+		noteNumber[i].textContent = "";
+	}
 
 	const billAmt = parseInt(billAmount.value);
 	const paidAmt = parseInt(paidAmount.value);
